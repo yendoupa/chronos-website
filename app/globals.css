@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+:root {
+  --background: #020617;
+  --foreground: #f1f5f9;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans), 'SF Pro Text', system-ui, -apple-system, 'BlinkMacSystemFont', 'Segoe UI', sans-serif;
+  --font-display: 'SF Pro Display', system-ui, -apple-system, 'BlinkMacSystemFont', 'Segoe UI', sans-serif;
+  --font-mono: var(--font-geist-mono);
+  
+  /* Couleurs CHRONOS */
+  --color-chronos-bg: #020617;
+  --color-chronos-surface: rgba(15, 23, 42, 0.82);
+  --color-chronos-border: rgba(148, 163, 184, 0.45);
+  --color-chronos-accent: #00AFFF;
+  --color-chronos-soft: #EFEFF3;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Animations personnalisées */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out;
+}
+
+.animate-slide-up-delay {
+  animation: slide-up 0.8s ease-out 0.2s both;
+}
+
+.animate-slide-up-delay-2 {
+  animation: slide-up 0.8s ease-out 0.4s both;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.8s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.8s ease-out;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Classes utilitaires pour les couleurs CHRONOS */
+.bg-chronos-bg {
+  background-color: var(--color-chronos-bg);
+}
+
+.bg-chronos-surface {
+  background-color: var(--color-chronos-surface);
+}
+
+.border-chronos-border {
+  border-color: var(--color-chronos-border);
+}
+
+.text-chronos-accent {
+  color: var(--color-chronos-accent);
+}
+
+.bg-chronos-accent {
+  background-color: var(--color-chronos-accent);
+}
+
+.text-chronos-soft {
+  color: var(--color-chronos-soft);
+}
+
+.bg-chronos-soft {
+  background-color: var(--color-chronos-soft);
+}
+
+/* Font display */
+.font-display {
+  font-family: var(--font-display);
+}
