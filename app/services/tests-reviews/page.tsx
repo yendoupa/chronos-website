@@ -57,7 +57,7 @@ const VideoPanel = () => (
 
 export default function TestsReviewsPage() {
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-slate-960 via-slate-940 to-slate-950 text-slate-100 overflow-hidden">
+    <div className="relative min-h-screen bg-gradient-to-b from-slate-950 via-slate-950 to-slate-950 text-slate-100 overflow-hidden">
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute -top-16 left-1/3 h-72 w-72 rounded-full bg-indigo-500/25 blur-[170px]" />
         <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-purple-700/30 blur-[200px]" />

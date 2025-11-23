@@ -528,7 +528,6 @@ export default function Home() {
                           muted
                           playsInline
                           preload="metadata"
-                          loading="lazy"
                         >
                           <source src="/workflow-impression.mp4" type="video/mp4" />
                         </video>

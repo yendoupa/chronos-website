@@ -57,7 +57,7 @@ const VideoShowcase = () => (
 
 export default function ElectroniquePage() {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-slate-950 via-slate-930 to-slate-950 text-slate-100 overflow-hidden">
+    <div className="relative min-h-screen bg-gradient-to-br from-slate-950 via-slate-950 to-slate-950 text-slate-100 overflow-hidden">
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute -top-16 right-1/3 h-72 w-72 rounded-full bg-sky-400/25 blur-[180px]" />
         <div className="absolute bottom-0 left-0 h-80 w-80 rounded-full bg-indigo-700/30 blur-[200px]" />
@@ -105,7 +105,7 @@ export default function ElectroniquePage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 pb-18">
+        <section className="mx-auto max-w-6xl px-4 pb-16">
           <div className="grid gap-8 lg:grid-cols-3">
             {sections.map((section) => (
               <div
